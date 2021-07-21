@@ -1,0 +1,135 @@
+/*
+ * main.c
+ *
+ *  Created on: 2021骞�4鏈�20鏃�
+ *      Author: Lee
+ */
+
+/*
+ * V 0.0.1
+ * 修改：
+ * 一、关于外部晶振30MHZ修改：
+ *      1、RS422波特率参数
+ *      2、PWM波特率参数
+ *      3、ADS1258 延时参数
+ *      4、SD卡延时参数
+ * 二、PWM占空比与高低电平关联。
+ *
+ *
+ * */
+#include "include.h"
+uint8_t test_1=200;
+uint8_t test_2=200;
+uint8_t test_3=200;
+uint8_t test_4=200;
+uint8_t test_5=200;
+uint8_t test_6=200;
+uint8_t test_sd=200;
+uint8_t test_eeprom=200;
+uint8_t readbuff[20]={"/0"};
+uint8_t eepromreadbuff[20]={"/0"};
+uint8_t readlen=0;
+uint8_t test_sd_read=200;
+uint8_t test_sd_write=200;
+FATFS   fs;         /* FatFsÎÄ¼þÏµÍ³¶ÔÏó */
+FIL     file;       /* file objects */
+void main(void)
+{
+   /*Run from flash*/
+   MemCopy(&RamfuncsLoadStart, &RamfuncsLoadEnd, &RamfuncsRunStart);
+   InitFlash();
+   InitSysCtrl(); /*system initialization*/
+   GIOP_Int();
+   DINT;   /*Disenable interrupt*/
+   InitPieCtrl(); /*initializes the PIE*/
+   IER = 0x0000; /*Interrupt enable register*/
+   IFR = 0x0000; /*Interrupt flag register*/
+   InitPieVectTable(); /*initializes the PIE vector table*/
+    Time0_Int(150, 1000); /*1ms*/
+#if (SPI_MODE == HARDWARE_SPI)
+    ADS1258_SPI_Int();
+#endif
+    Configuration_Interrupt();  /*Configure interrupt*/
+    Pwm1_Switch1_Int();
+    Pwm2_Switch2_Int();
+    Pwm3_Switch3_Int();
+    Pwm4_Switch4_Int();
+    Pwm5_Motor1_Int();
+    Pwm6_Motor2_Int();
+    RS422_Int(115200);
+    EINT; /*Enable interrupt*/
+    ERTM; /*Enable debug event*/
+    ADS1258_Int();
+    while(1)
+    {
+        if(test_1!=200)
+        {
+            set_switch1_status(test_1);
+            test_1=200;
+        }
+        if(test_2!=200)
+        {
+            set_switch2_status(test_2);
+            test_2=200;
+        }
+        if(test_3!=200)
+        {
+            set_switch3_status(test_3);
+            test_3=200;
+        }
+        if(test_4!=200)
+        {
+            set_switch4_status(test_4);
+            test_4=200;
+        }
+        if(test_5!=200)
+        {
+            set_motor1_status(test_5);
+            test_5=200;
+        }
+        if(test_6!=200)
+        {
+            set_motor2_status(test_6);
+            test_6=200;
+        }
+        if(test_eeprom!=200)
+        {
+            uint8_t WRITTEbuff[16]={"this is test"};
+            AT24C512_WritelenByte(1,WRITTEbuff,12);
+            DELAY_US(500);
+            AT24C512_ReadlenByte(1,eepromreadbuff,12);
+            test_eeprom=200;
+        }
+        if(test_sd_write!=200)
+        {
+               if(f_mount(&fs,"0:",1) != FR_OK)
+               {
+                      uint8_t iii=0;
+               }
+               else
+               {
+                   f_open (&file,  (const TCHAR *)"0:32.txt",  FA_OPEN_ALWAYS | FA_WRITE);
+
+                   f_puts("this is test\r\n", &file);
+                   f_sync(&file);
+
+                   f_close (&file);
+
+
+
+
+               }
+               test_sd_write=200;
+        }
+        if(test_sd_read!=200)
+        {
+            f_open (&file,  (const TCHAR *)"0:32.txt",FA_READ);
+
+                               f_read (&file, readbuff, 12, &readlen);
+                               f_close (&file);
+            test_sd_read=200;
+        }
+
+        task_run();
+    }
+}

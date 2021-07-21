@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;zikuineng/comm/Motor.c&apos; to &apos;initialization.c&apos;" description="Rename resource &apos;Motor.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="comm/Motor.c" name="initialization.c" stamp="1625016281172" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;zikuineng/comm/Motor.h&apos; to &apos;initialization.h&apos;" description="Rename resource &apos;Motor.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="comm/Motor.h" name="initialization.h" stamp="1625016289141" updateReferences="true"/>
+</session>
