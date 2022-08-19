@@ -48,7 +48,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+#include "DSP2833x_Device.h"
 //
 // ADC Individual Register Bit Definitions:
 //

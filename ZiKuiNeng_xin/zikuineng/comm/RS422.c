@@ -54,7 +54,7 @@ __interrupt void ScibRxInpur(void)
            {
                revice_buff[revice_len]=revice_data;
                revice_len++;
-               if(revice_len>=5)/*测试使用，由于测试改成了>=50。正式使用改为>=11*/
+               if(revice_len>=6)/*测试使用，由于测试改成了>=5。正式使用改为>=11*/
                {
                   /* if(CRC_Get_Cumulative_Sum(revice_buff, 10)== revice_buff[10])
                    {
@@ -65,15 +65,25 @@ __interrupt void ScibRxInpur(void)
                    }
                    else*/ /*由于测试此处被屏蔽了，正式使用，打开屏蔽*/
                     revice_len=0;
-                    if(revice_buff[3]==0x55 && revice_buff[4]==0xAA)/*测试使用，正式使用时，删除此处*/
+                    if(revice_buff[4]==0x55 && revice_buff[5]==0xAA)/*测试使用，正式使用时，删除此处*/
                     {
                         Rs422_revice=1;
                         Rs422_revice_type=revice_buff[2];
+                        Rs422_revice_data=revice_buff[3];
                     }
                }
             }
            else
-               revice_len=0;
+           {
+               if(revice_data==0xAA)/*测试使用，正式使用改为0xEB*/
+               {
+                 revice_len=1;
+               }
+               else
+               {
+                   revice_len=0;
+               }
+           }
      }
 
 #endif

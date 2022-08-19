@@ -346,7 +346,7 @@ InitPeripheralClocks(void)
     //
     // This function is not written to be an example of efficient code.
     //
-//    SysCtrlRegs.PCLKCR0.bit.ADCENCLK = 1;    // ADC
+    SysCtrlRegs.PCLKCR0.bit.ADCENCLK = 1;    // ADC
 
     //
     //                          *IMPORTANT*
@@ -359,7 +359,7 @@ InitPeripheralClocks(void)
     // See the device data manual and/or the ADC Reference
     // Manual for more information.
     //
- //   ADC_cal();
+    ADC_cal();
 
 //    SysCtrlRegs.PCLKCR0.bit.I2CAENCLK = 1;   // I2C
 //    SysCtrlRegs.PCLKCR0.bit.SCIAENCLK = 1;   // SCI-A
@@ -386,14 +386,14 @@ InitPeripheralClocks(void)
 //    SysCtrlRegs.PCLKCR1.bit.ECAP6ENCLK = 1;  // eCAP6
 //    SysCtrlRegs.PCLKCR1.bit.ECAP1ENCLK = 1;  // eCAP1
 //    SysCtrlRegs.PCLKCR1.bit.ECAP2ENCLK = 1;  // eCAP2
-//    SysCtrlRegs.PCLKCR1.bit.EQEP1ENCLK = 1;  // eQEP1
-//    SysCtrlRegs.PCLKCR1.bit.EQEP2ENCLK = 1;  // eQEP2
+    SysCtrlRegs.PCLKCR1.bit.EQEP1ENCLK = 1;  // eQEP1
+    SysCtrlRegs.PCLKCR1.bit.EQEP2ENCLK = 1;  // eQEP2
 
     SysCtrlRegs.PCLKCR3.bit.CPUTIMER0ENCLK = 1; // CPU Timer 0
 //    SysCtrlRegs.PCLKCR3.bit.CPUTIMER1ENCLK = 1; // CPU Timer 1
 //    SysCtrlRegs.PCLKCR3.bit.CPUTIMER2ENCLK = 1; // CPU Timer 2
 
-//    SysCtrlRegs.PCLKCR3.bit.DMAENCLK = 1;       // DMA Clock
+    SysCtrlRegs.PCLKCR3.bit.DMAENCLK = 1;       // DMA Clock
 //    SysCtrlRegs.PCLKCR3.bit.XINTFENCLK = 1;     // XTIMCLK
     SysCtrlRegs.PCLKCR3.bit.GPIOINENCLK = 1;    // GPIO input clock
 

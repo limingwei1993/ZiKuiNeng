@@ -20,7 +20,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.TMS320F28335.ccxml.UARTConnection_0/C28xx" value="zikuineng"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:zikuineng}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TMS320F28335.ccxml.Texas Instruments XDS100v3 USB Debug Probe/C28xx" value="C:\Users\15755\Desktop\ZiKuiNeng\zikuineng\Debug\zikuineng.out"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TMS320F28335.ccxml.Texas Instruments XDS100v3 USB Debug Probe_0/C28xx" value="D:\code\ZiKuiNeng\ZiKuiNeng_cc\zikuineng\Debug\zikuineng.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TMS320F28335.ccxml.Texas Instruments XDS100v3 USB Debug Probe_0/C28xx" value="D:\code\ZiKuiNeng\ZiKuiNeng\zikuineng\Debug\zikuineng.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/zikuineng"/>
 </listAttribute>

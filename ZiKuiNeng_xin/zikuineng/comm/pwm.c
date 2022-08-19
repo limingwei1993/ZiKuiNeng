@@ -14,6 +14,7 @@
 #define PWM4_TBPRD 7500 /*pwm4 frequency parameter;*/
 #define PWM5_TBPRD 7500 /*pwm5 frequency parameter;*/
 #define PWM6_TBPRD 7500 /*pwm6 frequency parameter;*/
+
 /*******************************************************************************
 Function:       // Pwm1_Switch1_Int
 Description:    // Configuration the pwm1 to switch 1
@@ -23,7 +24,7 @@ Output:         // none
 void Pwm1_Switch1_Int(void)
 {
     EPwm1Regs.TBPRD =PWM1_TBPRD;                        /* sets the PWM frequency*/
-    EPwm1Regs.CMPA.half.CMPA = PWM1_TBPRD;               /* Setup compare *//*占空比，等于PWM1_TBPRD为0%，等于0为100%*/
+    EPwm1Regs.CMPA.half.CMPA = 0;               /* Setup compare *//*占空比，等于PWM1_TBPRD为0%，等于0为100%*/
     EPwm1Regs.TBPHS.half.TBPHS= 0;
     EPwm1Regs.TBCTR = 0x0000;                      /* Clear counter*/
     EPwm1Regs.TBCTL.bit.CTRMODE = TB_COUNT_UP; /* Count up*/
@@ -47,7 +48,7 @@ Output:         // none
 void Pwm2_Switch2_Int(void)
 {
        EPwm2Regs.TBPRD =PWM2_TBPRD;                        /* sets the PWM frequency*/
-       EPwm2Regs.CMPA.half.CMPA = PWM2_TBPRD;               /* Setup compare *//*占空比，等于PWM2_TBPRD为0%，等于0为100%*/
+       EPwm2Regs.CMPA.half.CMPA = 0;               /* Setup compare *//*占空比，等于PWM2_TBPRD为0%，等于0为100%*/
        EPwm2Regs.TBPHS.half.TBPHS= 0;
        EPwm2Regs.TBCTR = 0x0000;                      /* Clear counter*/
        EPwm2Regs.TBCTL.bit.CTRMODE = TB_COUNT_UP; /* Count up*/
@@ -71,7 +72,7 @@ Output:         // none
 void Pwm3_Switch3_Int(void)
 {
        EPwm3Regs.TBPRD =PWM3_TBPRD;                        /* sets the PWM frequency*/
-       EPwm3Regs.CMPA.half.CMPA = PWM3_TBPRD;               /* Setup compare *//*占空比，等于PWM3_TBPRD为0%，等于0为100%*/
+       EPwm3Regs.CMPA.half.CMPA = 0;               /* Setup compare *//*占空比，等于PWM3_TBPRD为0%，等于0为100%*/
        EPwm3Regs.TBPHS.half.TBPHS= 0;
        EPwm3Regs.TBCTR = 0x0000;                      /* Clear counter*/
        EPwm3Regs.TBCTL.bit.CTRMODE = TB_COUNT_UP; /* Count up*/
@@ -95,7 +96,7 @@ Output:         // none
 void Pwm4_Switch4_Int(void)
 {
        EPwm4Regs.TBPRD =PWM4_TBPRD;                        /* sets the PWM frequency*/
-       EPwm4Regs.CMPA.half.CMPA = PWM4_TBPRD;               /* Setup compare *//*占空比，等于PWM4_TBPRD为0%，等于0为100%*/
+       EPwm4Regs.CMPA.half.CMPA = 0;               /* Setup compare *//*占空比，等于PWM4_TBPRD为0%，等于0为100%*/
        EPwm4Regs.TBPHS.half.TBPHS= 0;
        EPwm4Regs.TBCTR = 0x0000;                      /* Clear counter*/
        EPwm4Regs.TBCTL.bit.CTRMODE = TB_COUNT_UP; /* Count up*/
@@ -119,7 +120,7 @@ Output:         // none
 void Pwm5_Motor1_Int(void)
 {
        EPwm5Regs.TBPRD =PWM5_TBPRD;                        /* sets the PWM frequency*/
-       EPwm5Regs.CMPA.half.CMPA = PWM5_TBPRD;               /* Setup compare *//*占空比，等于PWM5_TBPRD为0%，等于0为100%*/
+       EPwm5Regs.CMPA.half.CMPA = 0;               /* Setup compare *//*占空比，等于PWM5_TBPRD为0%，等于0为100%*/
        EPwm5Regs.TBPHS.half.TBPHS= 0;
        EPwm5Regs.TBCTR = 0x0000;                      /* Clear counter*/
        EPwm5Regs.TBCTL.bit.CTRMODE = TB_COUNT_UP; /* Count up*/
@@ -143,7 +144,7 @@ Output:         // none
 void Pwm6_Motor2_Int(void)
 {
        EPwm6Regs.TBPRD =PWM6_TBPRD;                        /* sets the PWM frequency*/
-       EPwm6Regs.CMPA.half.CMPA = PWM6_TBPRD;               /* Setup compare *//*占空比，等于PWM6_TBPRD为0%，等于0为100%*/
+       EPwm6Regs.CMPA.half.CMPA = 0;               /* Setup compare *//*占空比，等于PWM6_TBPRD为0%，等于0为100%*/
        EPwm6Regs.TBPHS.half.TBPHS= 0;
        EPwm6Regs.TBCTR = 0x0000;                      /* Clear counter*/
        EPwm6Regs.TBCTL.bit.CTRMODE = TB_COUNT_UP; /* Count up*/
@@ -170,7 +171,7 @@ void set_switch1_status(uint8_t status)
     uint16_t Duty_cycle=0;
     if(status<=100)
     {
-        Duty_cycle=(100-status)*(PWM1_TBPRD/100);
+        Duty_cycle=(status)*(PWM1_TBPRD/100);
     }
     EPwm1Regs.CMPA.half.CMPA = Duty_cycle;               /* Setup compare */
 }
@@ -186,7 +187,7 @@ void set_switch2_status(uint8_t status)
     uint16_t Duty_cycle=0;
     if(status<=100)
     {
-        Duty_cycle=(100-status)*(PWM2_TBPRD/100);
+        Duty_cycle=(status)*(PWM2_TBPRD/100);
     }
     EPwm2Regs.CMPA.half.CMPA = Duty_cycle;               /* Setup compare */
 }
@@ -202,7 +203,7 @@ void set_switch3_status(uint8_t status)
     uint16_t Duty_cycle=0;
     if(status<=100)
     {
-        Duty_cycle=(100-status)*(PWM3_TBPRD/100);
+        Duty_cycle=(status)*(PWM3_TBPRD/100);
     }
     EPwm3Regs.CMPA.half.CMPA = Duty_cycle;               /* Setup compare */
 }
@@ -218,7 +219,7 @@ void set_switch4_status(uint8_t status)
     uint16_t Duty_cycle=0;
     if(status<=100)
     {
-        Duty_cycle=(100-status)*(PWM4_TBPRD/100);
+        Duty_cycle=(status)*(PWM4_TBPRD/100);
     }
     EPwm4Regs.CMPA.half.CMPA = Duty_cycle;               /* Setup compare */
 }
@@ -234,7 +235,7 @@ void set_motor1_status(uint8_t status)
     uint16_t Duty_cycle=0;
     if(status<=100)
     {
-        Duty_cycle=(100-status)*(PWM5_TBPRD/100);
+        Duty_cycle=(status)*(PWM5_TBPRD/100);
     }
     EPwm5Regs.CMPA.half.CMPA = Duty_cycle;               /* Setup compare */
 }
@@ -250,7 +251,55 @@ void set_motor2_status(uint8_t status)
     uint16_t Duty_cycle=0;
     if(status<=100)
     {
-        Duty_cycle=(100-status)*(PWM6_TBPRD/100);
+        Duty_cycle=(status)*(PWM6_TBPRD/100);
     }
     EPwm6Regs.CMPA.half.CMPA = (Duty_cycle);               /* Setup compare */
+}
+
+/*******************************************************************************
+Function:       // void Set_Motor_pin(uint8_t motorx,MOTOR_PIN pinx,uint8_t status)
+Description:    // set motor pin status
+Input:          // pinx: pin num,can be: MOTOR1_BRK ;MOTOR1_DIR ;MOTOR2_BRK ;MOTOR2_DIR ;
+                   status: pin status,can be 0 or 1;
+Output:         // none
+*******************************************************************************/
+void Set_Motor_pin(motor_pinx pinx,uint8_t status)
+{
+    switch(pinx)
+    {
+      case MOTOR1_BRK:
+          GpioDataRegs.GPCDAT.bit.GPIO69=status;
+      break;
+      case MOTOR1_DIR:
+          GpioDataRegs.GPCDAT.bit.GPIO70=status;
+      break;
+      case MOTOR2_BRK:
+          GpioDataRegs.GPCDAT.bit.GPIO65=status;
+      break;
+      case MOTOR2_DIR:
+          GpioDataRegs.GPCDAT.bit.GPIO66=status;
+      break;
+    }
+}
+
+/*******************************************************************************
+Function:       // uint8_t Get_nFUT_Status(uint8_t motorx,motor_pinx pinx)
+Description:    // get motor pin status
+Input:          // pinx: pin num,can be:MOTOR1_nFUT or MOTOR2_nFUT ;
+                   status: pin status,can be 0 or 1;
+Output:         // pin status
+*******************************************************************************/
+uint8_t Get_nFUT_Status(motor_pinx pinx)
+{
+    uint8_t pin_status=0;
+    switch(pinx)
+    {
+      case MOTOR1_nFUT:
+          pin_status=GpioDataRegs.GPCDAT.bit.GPIO71;
+      break;
+      case MOTOR2_nFUT:
+          pin_status=GpioDataRegs.GPCDAT.bit.GPIO67;
+      break;
+    }
+    return pin_status;
 }

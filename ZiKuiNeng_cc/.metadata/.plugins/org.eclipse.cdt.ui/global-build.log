@@ -23053,3 +23053,213 @@ Finished building target: "zikuineng.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../comm/RS422.c"
+Invoking: C2000 Compiler
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/CMD" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/comm" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/INCLUDE" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/SOURCE" --include_path="D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="comm/RS422.d_raw" --obj_directory="comm"  "../comm/RS422.c"
+Finished building: "../comm/RS422.c"
+ 
+Building target: "zikuineng.out"
+Invoking: C2000 Linker
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"zikuineng.map" --stack_size=0x300 --warn_sections -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/lib" -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="zikuineng_linkInfo.xml" --rom_model -o "zikuineng.out" "./SOURCE/DSP2833x_ADC_cal.obj" "./SOURCE/DSP2833x_Adc.obj" "./SOURCE/DSP2833x_CSMPasswords.obj" "./SOURCE/DSP2833x_CodeStartBranch.obj" "./SOURCE/DSP2833x_CpuTimers.obj" "./SOURCE/DSP2833x_DBGIER.obj" "./SOURCE/DSP2833x_DMA.obj" "./SOURCE/DSP2833x_DefaultIsr.obj" "./SOURCE/DSP2833x_DisInt.obj" "./SOURCE/DSP2833x_ECan.obj" "./SOURCE/DSP2833x_ECap.obj" "./SOURCE/DSP2833x_EPwm.obj" "./SOURCE/DSP2833x_EQep.obj" "./SOURCE/DSP2833x_GlobalVariableDefs.obj" "./SOURCE/DSP2833x_Gpio.obj" "./SOURCE/DSP2833x_I2C.obj" "./SOURCE/DSP2833x_Mcbsp.obj" "./SOURCE/DSP2833x_MemCopy.obj" "./SOURCE/DSP2833x_PieCtrl.obj" "./SOURCE/DSP2833x_PieVect.obj" "./SOURCE/DSP2833x_Sci.obj" "./SOURCE/DSP2833x_Spi.obj" "./SOURCE/DSP2833x_SysCtrl.obj" "./SOURCE/DSP2833x_Xintf.obj" "./SOURCE/DSP2833x_usDelay.obj" "./comm/EEPROM.obj" "./comm/RS422.obj" "./comm/SPI_SDCard.obj" "./comm/diskio.obj" "./comm/ff.obj" "./comm/ffsystem.obj" "./comm/ffunicode.obj" "./comm/initialization.obj" "./comm/main.obj" "./comm/pwm.obj" "./comm/sdcard.obj" "./comm/spi_ADS1258.obj" "./comm/spi_DAC8563.obj" "./comm/time.obj" "../CMD/DSP2833x_Headers_nonBIOS.cmd" "../CMD/F28335.cmd"  -llibc.a 
+<Linking>
+Finished building target: "zikuineng.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../comm/RS422.c"
+Invoking: C2000 Compiler
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/CMD" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/comm" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/INCLUDE" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/SOURCE" --include_path="D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="comm/RS422.d_raw" --obj_directory="comm"  "../comm/RS422.c"
+Finished building: "../comm/RS422.c"
+ 
+Building target: "zikuineng.out"
+Invoking: C2000 Linker
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"zikuineng.map" --stack_size=0x300 --warn_sections -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/lib" -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="zikuineng_linkInfo.xml" --rom_model -o "zikuineng.out" "./SOURCE/DSP2833x_ADC_cal.obj" "./SOURCE/DSP2833x_Adc.obj" "./SOURCE/DSP2833x_CSMPasswords.obj" "./SOURCE/DSP2833x_CodeStartBranch.obj" "./SOURCE/DSP2833x_CpuTimers.obj" "./SOURCE/DSP2833x_DBGIER.obj" "./SOURCE/DSP2833x_DMA.obj" "./SOURCE/DSP2833x_DefaultIsr.obj" "./SOURCE/DSP2833x_DisInt.obj" "./SOURCE/DSP2833x_ECan.obj" "./SOURCE/DSP2833x_ECap.obj" "./SOURCE/DSP2833x_EPwm.obj" "./SOURCE/DSP2833x_EQep.obj" "./SOURCE/DSP2833x_GlobalVariableDefs.obj" "./SOURCE/DSP2833x_Gpio.obj" "./SOURCE/DSP2833x_I2C.obj" "./SOURCE/DSP2833x_Mcbsp.obj" "./SOURCE/DSP2833x_MemCopy.obj" "./SOURCE/DSP2833x_PieCtrl.obj" "./SOURCE/DSP2833x_PieVect.obj" "./SOURCE/DSP2833x_Sci.obj" "./SOURCE/DSP2833x_Spi.obj" "./SOURCE/DSP2833x_SysCtrl.obj" "./SOURCE/DSP2833x_Xintf.obj" "./SOURCE/DSP2833x_usDelay.obj" "./comm/EEPROM.obj" "./comm/RS422.obj" "./comm/SPI_SDCard.obj" "./comm/diskio.obj" "./comm/ff.obj" "./comm/ffsystem.obj" "./comm/ffunicode.obj" "./comm/initialization.obj" "./comm/main.obj" "./comm/pwm.obj" "./comm/sdcard.obj" "./comm/spi_ADS1258.obj" "./comm/spi_DAC8563.obj" "./comm/time.obj" "../CMD/DSP2833x_Headers_nonBIOS.cmd" "../CMD/F28335.cmd"  -llibc.a 
+<Linking>
+Finished building target: "zikuineng.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../comm/RS422.c"
+Invoking: C2000 Compiler
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/CMD" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/comm" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/INCLUDE" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/SOURCE" --include_path="D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="comm/RS422.d_raw" --obj_directory="comm"  "../comm/RS422.c"
+Finished building: "../comm/RS422.c"
+ 
+Building target: "zikuineng.out"
+Invoking: C2000 Linker
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"zikuineng.map" --stack_size=0x300 --warn_sections -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/lib" -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="zikuineng_linkInfo.xml" --rom_model -o "zikuineng.out" "./SOURCE/DSP2833x_ADC_cal.obj" "./SOURCE/DSP2833x_Adc.obj" "./SOURCE/DSP2833x_CSMPasswords.obj" "./SOURCE/DSP2833x_CodeStartBranch.obj" "./SOURCE/DSP2833x_CpuTimers.obj" "./SOURCE/DSP2833x_DBGIER.obj" "./SOURCE/DSP2833x_DMA.obj" "./SOURCE/DSP2833x_DefaultIsr.obj" "./SOURCE/DSP2833x_DisInt.obj" "./SOURCE/DSP2833x_ECan.obj" "./SOURCE/DSP2833x_ECap.obj" "./SOURCE/DSP2833x_EPwm.obj" "./SOURCE/DSP2833x_EQep.obj" "./SOURCE/DSP2833x_GlobalVariableDefs.obj" "./SOURCE/DSP2833x_Gpio.obj" "./SOURCE/DSP2833x_I2C.obj" "./SOURCE/DSP2833x_Mcbsp.obj" "./SOURCE/DSP2833x_MemCopy.obj" "./SOURCE/DSP2833x_PieCtrl.obj" "./SOURCE/DSP2833x_PieVect.obj" "./SOURCE/DSP2833x_Sci.obj" "./SOURCE/DSP2833x_Spi.obj" "./SOURCE/DSP2833x_SysCtrl.obj" "./SOURCE/DSP2833x_Xintf.obj" "./SOURCE/DSP2833x_usDelay.obj" "./comm/EEPROM.obj" "./comm/RS422.obj" "./comm/SPI_SDCard.obj" "./comm/diskio.obj" "./comm/ff.obj" "./comm/ffsystem.obj" "./comm/ffunicode.obj" "./comm/initialization.obj" "./comm/main.obj" "./comm/pwm.obj" "./comm/sdcard.obj" "./comm/spi_ADS1258.obj" "./comm/spi_DAC8563.obj" "./comm/time.obj" "../CMD/DSP2833x_Headers_nonBIOS.cmd" "../CMD/F28335.cmd"  -llibc.a 
+<Linking>
+Finished building target: "zikuineng.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../comm/RS422.c"
+Invoking: C2000 Compiler
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/CMD" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/comm" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/INCLUDE" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/SOURCE" --include_path="D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="comm/RS422.d_raw" --obj_directory="comm"  "../comm/RS422.c"
+Finished building: "../comm/RS422.c"
+ 
+Building target: "zikuineng.out"
+Invoking: C2000 Linker
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"zikuineng.map" --stack_size=0x300 --warn_sections -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/lib" -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="zikuineng_linkInfo.xml" --rom_model -o "zikuineng.out" "./SOURCE/DSP2833x_ADC_cal.obj" "./SOURCE/DSP2833x_Adc.obj" "./SOURCE/DSP2833x_CSMPasswords.obj" "./SOURCE/DSP2833x_CodeStartBranch.obj" "./SOURCE/DSP2833x_CpuTimers.obj" "./SOURCE/DSP2833x_DBGIER.obj" "./SOURCE/DSP2833x_DMA.obj" "./SOURCE/DSP2833x_DefaultIsr.obj" "./SOURCE/DSP2833x_DisInt.obj" "./SOURCE/DSP2833x_ECan.obj" "./SOURCE/DSP2833x_ECap.obj" "./SOURCE/DSP2833x_EPwm.obj" "./SOURCE/DSP2833x_EQep.obj" "./SOURCE/DSP2833x_GlobalVariableDefs.obj" "./SOURCE/DSP2833x_Gpio.obj" "./SOURCE/DSP2833x_I2C.obj" "./SOURCE/DSP2833x_Mcbsp.obj" "./SOURCE/DSP2833x_MemCopy.obj" "./SOURCE/DSP2833x_PieCtrl.obj" "./SOURCE/DSP2833x_PieVect.obj" "./SOURCE/DSP2833x_Sci.obj" "./SOURCE/DSP2833x_Spi.obj" "./SOURCE/DSP2833x_SysCtrl.obj" "./SOURCE/DSP2833x_Xintf.obj" "./SOURCE/DSP2833x_usDelay.obj" "./comm/EEPROM.obj" "./comm/RS422.obj" "./comm/SPI_SDCard.obj" "./comm/diskio.obj" "./comm/ff.obj" "./comm/ffsystem.obj" "./comm/ffunicode.obj" "./comm/initialization.obj" "./comm/main.obj" "./comm/pwm.obj" "./comm/sdcard.obj" "./comm/spi_ADS1258.obj" "./comm/spi_DAC8563.obj" "./comm/time.obj" "../CMD/DSP2833x_Headers_nonBIOS.cmd" "../CMD/F28335.cmd"  -llibc.a 
+<Linking>
+Finished building target: "zikuineng.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../comm/RS422.c"
+Invoking: C2000 Compiler
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/CMD" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/comm" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/INCLUDE" --include_path="D:/code/ZiKuiNeng/ZiKuiNeng_cc/zikuineng/SOURCE" --include_path="D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi --preproc_with_compile --preproc_dependency="comm/RS422.d_raw" --obj_directory="comm"  "../comm/RS422.c"
+Finished building: "../comm/RS422.c"
+ 
+Building target: "zikuineng.out"
+Invoking: C2000 Linker
+"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/bin/cl2000" -v28 -ml -mt --float_support=fpu32 --advice:performance=all -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"zikuineng.map" --stack_size=0x300 --warn_sections -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/lib" -i"D:/APP/ti/ccs/tools/compiler/ti-cgt-c2000_20.2.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="zikuineng_linkInfo.xml" --rom_model -o "zikuineng.out" "./SOURCE/DSP2833x_ADC_cal.obj" "./SOURCE/DSP2833x_Adc.obj" "./SOURCE/DSP2833x_CSMPasswords.obj" "./SOURCE/DSP2833x_CodeStartBranch.obj" "./SOURCE/DSP2833x_CpuTimers.obj" "./SOURCE/DSP2833x_DBGIER.obj" "./SOURCE/DSP2833x_DMA.obj" "./SOURCE/DSP2833x_DefaultIsr.obj" "./SOURCE/DSP2833x_DisInt.obj" "./SOURCE/DSP2833x_ECan.obj" "./SOURCE/DSP2833x_ECap.obj" "./SOURCE/DSP2833x_EPwm.obj" "./SOURCE/DSP2833x_EQep.obj" "./SOURCE/DSP2833x_GlobalVariableDefs.obj" "./SOURCE/DSP2833x_Gpio.obj" "./SOURCE/DSP2833x_I2C.obj" "./SOURCE/DSP2833x_Mcbsp.obj" "./SOURCE/DSP2833x_MemCopy.obj" "./SOURCE/DSP2833x_PieCtrl.obj" "./SOURCE/DSP2833x_PieVect.obj" "./SOURCE/DSP2833x_Sci.obj" "./SOURCE/DSP2833x_Spi.obj" "./SOURCE/DSP2833x_SysCtrl.obj" "./SOURCE/DSP2833x_Xintf.obj" "./SOURCE/DSP2833x_usDelay.obj" "./comm/EEPROM.obj" "./comm/RS422.obj" "./comm/SPI_SDCard.obj" "./comm/diskio.obj" "./comm/ff.obj" "./comm/ffsystem.obj" "./comm/ffunicode.obj" "./comm/initialization.obj" "./comm/main.obj" "./comm/pwm.obj" "./comm/sdcard.obj" "./comm/spi_ADS1258.obj" "./comm/spi_DAC8563.obj" "./comm/time.obj" "../CMD/DSP2833x_Headers_nonBIOS.cmd" "../CMD/F28335.cmd"  -llibc.a 
+<Linking>
+Finished building target: "zikuineng.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project zikuineng ****
+
+"D:\\APP\\ti\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'zikuineng.out' is up to date.
+
+**** Build Finished ****

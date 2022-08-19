@@ -6,7 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="num"/>
+			<item value="test_eeprom_read"/>
+			<item value="AdcMirror"/>
 			<item value="set_CLK(LOW)"/>
 			<item value="test_DAC"/>
 			<item value="DAC8563_IO_Configure"/>
@@ -17,11 +21,12 @@
 			<item value="AD_Delay1"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="715"/>
-		<item key="DIALOG_Y_ORIGIN" value="170"/>
+		<item key="DIALOG_X_ORIGIN" value="1327"/>
+		<item key="DIALOG_Y_ORIGIN" value="214"/>
 		<item key="DIALOG_WIDTH" value="300"/>
 		<item key="DIALOG_HEIGHT" value="410"/>
 		<item key="DIALOG_FONT_NAME" value="1|Microsoft YaHei UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Microsoft YaHei UI"/>

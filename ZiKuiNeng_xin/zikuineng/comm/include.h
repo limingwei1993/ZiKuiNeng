@@ -21,6 +21,8 @@
 #include "pwm.h"
 #include "sdcard.h"
 #include "initialization.h"
+#include "ADC.h"
+#include "eqep.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -34,10 +36,11 @@ extern uint8_t test_eeprom_read;
 extern uint8_t test_eeprom_write;
 extern uint8_t test_sd_read;
 extern uint8_t test_sd_write;
-extern uint8_t send_ADC_value;
+extern uint8_t send_RS232_value;
 extern uint8_t send_eeprom_data;
 extern uint8_t Rs422_revice;
 extern uint8_t Rs422_revice_type;
+extern uint8_t Rs422_revice_data;
 extern uint8_t switch1_on_off;
 extern uint8_t switch2_on_off;
 extern uint8_t switch3_on_off;

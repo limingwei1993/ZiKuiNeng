@@ -50,7 +50,14 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
+typedef int                int16;
+typedef long               int32;
+typedef long long          int64;
+typedef unsigned int       Uint16;
+typedef unsigned long      Uint32;
+typedef unsigned long long Uint64;
+typedef float              float32;
+typedef long double        float64;
 //
 // Capture decoder control register bit definitions
 //
